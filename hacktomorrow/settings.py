@@ -25,8 +25,7 @@ SECRET_KEY = os.environ['SECRET_BASE_KEY']
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'http://hacktomorroworg-env.sp4tpcekex.us-east-2.elasticbeanstalk.com/',
-    'hacktomorrow.org',
+    '*',
 ]
 
 
