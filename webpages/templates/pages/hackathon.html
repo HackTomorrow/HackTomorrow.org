@@ -1,0 +1,114 @@
+﻿{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HackTomorrow Hackathon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static "pages/css/hackathon-main.css" %}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+</head>
+<body class="the-body" id="custom">
+    <div class="container">
+        <div class="">
+            <div class="center">
+                <h1>HackTomorrow 2019</h1>
+                <img id="logo" src="{% static "pages/img/hacktomorrow-logo-inverse-nobg.png" %}" />
+                <h3 class="orange">By <span>The Creative Foundation</span></h3>
+                <div class="shorterLineHeight" id="basicInfo">
+                    <p>Chicago, IL</p>
+                    <p>April 3rd through 4th</p>
+                </div>
+                <a href="/register">
+                    <div class="registerButton">
+                        <h4>REGISTER NOW</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="leftAlign explaination">
+            <h3 class="golden">What is the HackTomorrow Hackathon?</h3>
+            <p>The HackTomorrow Hackathon is a periodical celebration innovation and creativity where hundreds of passionate young people come together to create something they believe in. <br><br>On the other hand, HackTomorrow is an organization working to give everybody, everywhere regardardless of race, region, color, status, or income to be able to contribute to the greater good and build the solutions of tomorrow, today.</p>
+        </div>
+        <div class="rightAlign explaination">
+            <h3 class="golden">Why Should You Come?</h3>
+            <p>Besides the more common reasons like attending hackathons help you build your dream projects faster and you'll get free food, attending our hackathon and becoming a HackTomorrow member will open doors that will allow to be a part of bootcamps, fairs, festivals, and other events that will help you to create things you are truly proud of. <br><br>Come be a part of something bigger.</p>
+        </div>
+
+        <div class="spacer"></div>
+
+        <h2 class="center golden">FAQs</h2>
+        <div class="row faq">
+            <div class="col-lg-3 col-md-6 col-sm-12 singleFaq">
+                <h4 class="orange center">How Much Does It Cost?</h4>
+                <p class="center">Nothing! We believe that everyone should be able to create, irrespective of money.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 singleFaq">
+                <h4 class="orange center">Can I Attend?<br></h4>
+                <p class="center">Anyone 18 and above can attend, were working to allow younger members to attend.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 singleFaq">
+                <h4 class="orange center">What Should I Bring?</h4>
+                <p class="center">We reccomend bringing your laptop, chargers, sleeping bag, and whatever you'll need to be your best self.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 singleFaq">
+                <h4 class="orange center">Do I Need A Team?</h4>
+                <p class="center">Nope, it is completely optional to be a part of a team. If you want to hack alone, thats fine!</p>
+            </div>
+        </div>
+        <div class="row faq">
+            <div class="col-lg-3 col-md-6 col-sm-12 singleFaq">
+                <h4 class="orange center">How Does Judging Work?</h4>
+                <p class="center">Our panel of judges will rate each project on a set of requirements and the highest rated projects win. The requirements will be public.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 singleFaq">
+                <h4 class="orange center">Will There Be Food?</h4>
+                <p class="center">Yup, we will provide three meals a day. Snacks, drinks, and coffee will be avalible all the time.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 singleFaq">
+                <h4 class="orange center">What Can I Make?</h4>
+                <p class="center">Anything you truly believe can make a difference. Whether its hardware, programs, or event art we can't wait!</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 singleFaq">
+                <h4 class="orange center">What If I Have More Questions?</h4>
+                <p class="center">Send us an email at <a href="mailto:contact@hacktomorrow.org">contact@hacktomorrow.org</a></p>
+            </div>
+        </div>
+        
+        <div class="spacer"></div>
+        
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="center" id="tagline">Let's Build the Future, Today.</h2>
+                <a href="/register">
+                    <div class="registerButton">
+                        <h4>REGISTER NOW</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="my-social-icons">
+            <a href="#" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>  
+            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://github.com/hacktomorrow" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-medium-m fa-2x"></i></a>
+            <a href="#" target="_blank"><i class="fas fa-envelope fa-2x"></i></a>
+        </div>
+        <div class="shorterLineHeight">
+            <p class="center">HackTomorrow <i class="far fa-copyright fa-sm"></i></p>
+            <p class="center small-text">A Creative Foundation Company</p>
+        </div>
+    </footer>
+</body>
+
+</html>
