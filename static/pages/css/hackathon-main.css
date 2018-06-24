@@ -27,7 +27,7 @@
 }
 
 .purple-underline {
-    border-bottom: 2px #711466 solid;
+    text-decoration: underline #711466 solid;
 }
 
 #custom h1  {
