@@ -26,6 +26,10 @@
     text-decoration: none;
 }
 
+.purple-underline {
+    border-bottom: 2px #711466 solid;
+}
+
 #custom h1  {
     font-size: 56px;
 }
