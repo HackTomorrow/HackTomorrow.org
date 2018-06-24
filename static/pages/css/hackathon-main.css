@@ -7,9 +7,18 @@
 }
 
 #custom .container {
-    padding-top: 60px;
+    padding-top: 30px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.side-borders {
+    border-left: 2px #FFAB00 solid;
+    border-right: 2px #FFAB00 solid;
+}
+
+.light-font {
+    font-weight: 300;
 }
 
 #custom a {
@@ -32,7 +41,6 @@
 #custom h4 {
     font-size: 24px;
 }
-
 
 #custom p {
     font-size: 16px;
@@ -66,10 +74,6 @@
     text-align: center;
 }
 
-.singleFaq {
-    /* border: 2px white solid; */
-}
-
 .registerButton {
     border: 2px #FFAB00 solid;
     text-align: center;
@@ -85,12 +89,20 @@
     margin-bottom: 100px;
 }
 
+.small-spacer {
+    margin-bottom: 30px;
+}
+
 .golden {
     color: #FFAB00;
 }
 
 .orange {
     color: #FF5200;
+}
+
+#custom .grey {
+    color: rgb(90, 90, 90);
 }
 
 .center {
