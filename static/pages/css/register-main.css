@@ -59,10 +59,6 @@
     text-decoration: none;
 }
 
-.form .register-form {
-    display: none;
-}
-
 .container {
     position: relative;
     z-index: 1;
@@ -114,9 +110,4 @@
     font-family: 'Josefin Sans', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-img {
-    width: 50%;
-    height: 50%;
 }
