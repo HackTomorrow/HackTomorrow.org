@@ -19,3 +19,6 @@ def events_dashboard_page(request, ):
 
 def register_page(request, ):
     return render(request, "pages/register.html", context=None)
+
+def login_page(request, ):
+    return render(request, "pages/login.html", context=None)
