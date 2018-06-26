@@ -5,7 +5,7 @@ def index(request, ):
     return redirect(events_hackathon_page)
 
 def events_page(request, ):
-    return rediret(events_hackathon_page):
+    return redirect(events_hackathon_page)
 
 def events_hackathon_page(request, ):
     return render(request, "pages/hackathon.html", context=None)
