@@ -3,22 +3,17 @@ from django.shortcuts import redirect, render
 import requests
 import json
 
-def index(request, ):
+def index(request, ) -> HttpResponse:
     return redirect(events_hackathon_page)
 
-def events_page(request, ):
+def events_page(request, ) -> HttpResponse:
     return redirect(events_hackathon_page)
 
-def events_hackathon_page(request, ):
+def events_hackathon_page(request, ) -> HttpResponse:
     return render(request, "pages/hackathon.html", context=None)
 
-def events_dashboard_page(request, ):
-    header = {}
-    events = requests.get("api.hacktomorrow.org/events", header=header)
-    return render(request, "pages/dashboard.html", {"events" : json.loads(events)})
-
-def register_page(request, ):
+def register_page(request, ) -> HttpResponse: 
     return render(request, "pages/register.html", context=None)
 
-def login_page(request, ):
+def login_page(request, ) -> HttpResponse:
     return render(request, "pages/login.html", context=None)
