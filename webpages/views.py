@@ -1,24 +1,47 @@
+from __future__ import print_function
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 import requests
 import json
+from django.views import View
 
-def index(request, ):
-    return redirect(events_hackathon_page)
+class IndexView(View):
 
-def events_page(request, ):
-    return redirect(events_hackathon_page)
+    def get(self, request) -> HttpResponse:
+        return redirect("hackathon_page")
 
-def events_hackathon_page(request, ):
-    return render(request, "pages/hackathon.html", context=None)
+class EventsView(View):
 
-def events_dashboard_page(request, ):
-    header = {}
-    events = requests.get("api.hacktomorrow.org/events", header=header)
-    return render(request, "pages/dashboard.html", {"events" : json.loads(events)})
+    def get(self, request) -> HttpResponse:
+        return redirect("hackathon_page")
 
-def register_page(request, ):
-    return render(request, "pages/register.html", context=None)
+class HackathonView(View):
+    
+    def get(self, request) -> HttpResponse:
+        return render(request, "pages/hackathon.html", context=None)
 
-def login_page(request, ):
-    return render(request, "pages/login.html", context=None)
+class RegisterView(View):
+
+    def get(self, request) -> HttpResponse:
+        return render(request, "pages/register.html", context=None)
+
+    def post(self, request) -> HttpResponse:
+        form = request.POST
+        error = 
+        if form["password"] == form["password_again"]:
+            try:
+                #promise = auth.create_user_with_email_and_password(form["email"],form["password"])
+            except Exception as e:
+                print(e)
+                error = "critical"
+        else:
+            error = "passwords_dont_match"
+        return render(request, "pages/register.html", {"error":error})
+
+class Loginiew(View):
+
+    def get(self, request) -> HttpResponse:
+        return render(request, "pages/login.html", context=None)
+    
+    def post(self, request) -> HttpResponse:
+        pass
