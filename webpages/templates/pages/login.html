@@ -1,8 +1,6 @@
 {% load static %}
 
 <!DOCTYPE html>
-{% load static %}
-
 <html>
 <head>
     <link rel="apple-touch-icon" sizes="57x57" href="{% static "/apple-icon-57x57.png" %}">
@@ -25,6 +23,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome Back | HackTomorrow</title>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{% static "pages/css/login-main.css" %}" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -34,16 +33,17 @@
 <body id="the-body">
     <div class="login-page">
         <div class="form">
-            <form class="login-form" method="post" action="/login/">
+            <div class="login-form">
                 <h2>Welcome Back</h2>
-                <input type="email" label="email" name="email" placeholder="email" required>
-                <input type="password" label="password" name="password" placeholder="password" required>
-                <button type="submit">login</button>
+                <input type="email" id="email" label="email" name="email" placeholder="email" required>
+                <input type="password" id="password" label="password" name="password" placeholder="password" required>
+                <button id="button" type="submit">login</button>
                 <p class="message">Not a Member?
                     <a href="/register">Create an account</a>
                 </p>
-            </form>
+            </div>
         </div>
     </div>
+    <script src="{% static "/pages/js/login-app.js" %}"></script>
 </body>
 </html>

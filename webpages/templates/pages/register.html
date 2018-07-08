@@ -24,6 +24,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Become a Member | HackTomorrow</title>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="{% static "pages/css/register-main.css" %}" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -40,9 +41,9 @@
                 <h2>Become a Member</h2>
                 <input type="text" label="full_name" name="full_name" placeholder="full name" required/>
                 <input type="text" label="username" name="username" placeholder="username" required/>
-                <input type="email" label="email" name="email" placeholder="email address" required/>
-                <input type="password" label="password" name="password" placeholder="password" required/>
-                <input type="password" label="password_again" name="password_again" placeholder="retype password" required/>
+                <input type="email" id="email" label="email" name="email" placeholder="email address" required/>
+                <input type="password" id="password" label="password" name="password" placeholder="password" required/>
+                <input type="password" id="password-again" label="password_again" name="password_again" placeholder="retype password" required/>
                 <button type="submit">create</button>
                 <p class="message">Already a Member?
                     <a href="/login">Sign In</a>
@@ -50,5 +51,6 @@
             </form>
         </div>
     </div>
+    <script src="{% static "/pages/js/register-app.js" %}"></script>
 </body>
 </html>
