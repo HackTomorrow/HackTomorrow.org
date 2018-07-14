@@ -15,6 +15,11 @@ class EventsView(View):
     def get(self, request) -> HttpResponse:
         return redirect("hackathon_page")
 
+class NineteenView(View):
+
+    def get(self, request) -> HttpResponse:
+        return redirect("hackathon_page")
+
 class HackathonView(View):
     
     def get(self, request) -> HttpResponse:
