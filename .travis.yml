@@ -12,7 +12,7 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   skip_cleanup: true
   region: "us-east-2"  
-  app: "hacktomorrow.org"
+  app: "hacktomorrow.tcff.co"
   env: $ELASTIC_BEANSTALK_ENV
   bucket_name: $S3_BUCKET_NAME
 
