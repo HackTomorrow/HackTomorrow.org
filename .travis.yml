@@ -4,7 +4,7 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python manage.py test
+  - python tests.py
 
 deploy:
   provider: elasticbeanstalk
@@ -17,8 +17,6 @@ deploy:
   bucket_name: $S3_BUCKET_NAME
 
 notifications:
-  email:
-    - armaangupta01@gmail.com
   slack: thecreativefoundation:n3PZ4D7QrW3uXjH7QdBH5exQ
   on_failure: always
   on_success: always
