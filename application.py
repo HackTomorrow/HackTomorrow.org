@@ -1,5 +1,8 @@
 from flask import Flask, render_template, redirect, request
 
+tcf_accounts_secret = os.getenv("TCF_ACCOUNTS_SECRET")
+
+
 # FIREBASE ADMIN SETUP
 
 application = Flask(__name__)
@@ -16,7 +19,10 @@ def hackathon():
 
 @application.route("/login")
 def login():
-    if request.args.get("token"):
+    token = request.args.get("token")
+    if token:
+        # sign in
+        # add new permissions to database
         pass
     return render_template("login.html")
 
