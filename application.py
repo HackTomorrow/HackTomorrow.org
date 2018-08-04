@@ -1,8 +1,5 @@
 from flask import Flask, render_template, redirect, request
 
-tcf_accounts_secret = os.getenv("TCF_ACCOUNTS_SECRET")
-
-
 # FIREBASE ADMIN SETUP
 
 application = Flask(__name__)
